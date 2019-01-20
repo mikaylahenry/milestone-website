@@ -1,0 +1,164 @@
+/***** BASE STYLES *****/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
+
+#portfolio {
+  height: 1450px;
+}
+
+#about{
+  height: 650px;
+}
+
+#connect {
+  height: 450px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***** GRID *****/
+
+.full-width {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.half-width {
+  float: left;
+  width: 50%;
+}
+
+.third-width {
+  float: left;
+  width: 33.3%;
+}
+
+/***** Header *****/
+
+header {
+  background-image: url("../img/hero-image.png");
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffe2ad;
+  font-family: 'Bowlby One SC';
+  font-size: 72px;
+  margin: auto;
+  padding-top: 300px;
+  padding-left: 50px;
+}
+
+header h2 {
+  color: #095256;
+  font-size: 36px;
+  margin: auto;
+  padding-left:30px;
+  width: 800px;
+}
+
+/***** Portfolio  *****/
+#portfolio {
+  background-color: #ffffff;
+}
+
+#portfolio h3 {
+  color: #095256;
+  font-family: 'Bowlby One SC';
+  text-align: center;
+}
+
+#portfolio img {
+ margin-left: 100px;
+ padding-bottom: 50px;
+}
+
+#portfolio h4, #portfolio p {
+  color: #095256;
+  text-align: left;
+}
+
+#portfolio .full-width {
+  padding: 50px 0;
+}
+
+#portfolio .project-info-1 {
+  height:350px;
+  margin-top: -35px;
+  padding-right: 50px;
+}
+
+#portfolio .project-info-2 {
+  height: 350px;
+  padding-top: 25px;
+  padding-right: 50px;
+}
+
+#portfolio .project-info-3 {
+  height: 350px;
+  padding-top: 55px;
+  padding-right: 50px;
+}
+
+/***** About  *****/
+#about {
+  background-color: #296c78;
+  border: solid 1px;
+  border-color: #296c78;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+#about h3 {
+  color: #ffffff;
+  font-family: 'Bowlby One SC';
+}
+
+#about p {
+  color: #ffffff;
+  margin-right: 75px;
+  text-align: left;
+}
+
+/***** Connect  *****/
+#connect {
+  background-color: #184044;
+  border: solid 1px;
+  border-color: #184044;
+  margin-top: 0;
+  text-align: center;
+}
+
+#connect h3, #connect h4, #connect p {
+  color: #ffffff;
+}
+
+#connect p {
+  padding-bottom: 0px;
+}
+
+#connect h3 {
+  font-family: 'Bowlby One SC';
+}
+
+#connect img {
+  margin: 10px;
+}
+/***** Footer  *****/
+footer {
+  background-color: #184044;
+  text-align: center;
+}
+
+footer p {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
