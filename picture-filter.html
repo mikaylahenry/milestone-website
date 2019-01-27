@@ -1,0 +1,60 @@
+<script
+  src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<link rel="stylesheet" type="text/css" href="picture-filter/css/main.css">
+<h1>
+Filter That Pic!
+</h1>
+
+<canvas id="can">
+</canvas>
+<div>
+<p>
+  <input type="file" id="image" multiple="false" accept="image/*"   onchange="uploadimg()"/>
+</p>
+
+</div>
+<h2> Choose a filter: </h2>
+<div>
+<p>
+<input type = "button"
+   value = "B&W"
+       class = "filters"
+       id = "grey"
+       onclick="grey()" />
+  <input type = "button"
+         value = "Blur"
+         class = "filters"
+         id = "blur"
+         onclick = "blurry()" />
+<input type="button"
+       class = "filters"
+       value = "Red"
+       id = "red"
+       onclick="red()"/>
+  <input type = "button"
+         class = "filters"
+         value = "Rainbow"
+         id = "rainbow"
+         onclick = "rainbow()" />
+
+  <input type = "button"
+         value = "Checker"
+         class = "filters"
+         id="checker"
+         onclick = "checker()" />
+  <input type = "button"
+         class = "filters"
+         value = "Reset"
+         id = "reset"
+         onclick = "resetImage()" />
+  <input type = "button"
+         class = "filters"
+         value = "Clear"
+         id = "clear"
+         onclick = "clearImage()" />
+</p>
+</div>
+
+<script type="text/javascript" href="picture-filter/js/script.js"></script>

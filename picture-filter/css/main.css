@@ -1,0 +1,105 @@
+div {
+  width: 700px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: Impact;
+  color: #660066;
+  height: 40px;
+  width: 195px;
+  margin: auto;
+}
+
+h2 {
+  color: #660066;
+  height: 40px;
+  width: 155px;
+    margin: auto;
+  padding: 10px;
+}
+canvas {
+height: 500px;
+  width: 500px;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+* {
+  margin: 5px;
+  font-color: black;
+  background-color: #006666;
+  font-family: Impact;
+}
+
+p {
+  font-size: 25px;
+  color: white;
+  margin: auto;
+}
+
+#image {
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.filters {
+font-size: 30px;
+  color: white;
+  border: 1px;
+  margin: auto;
+}
+
+#red {
+  background-color: red;
+  color: black;
+  border
+}
+
+#rainbow {
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  color: black;
+}
+
+#blur {
+  background: radial-gradient(black,white);
+  color: black;
+}
+
+#checker {
+  background: linear-gradient(0deg, transparent 50%, #000 50%), linear-gradient(90deg, #000 50%, #f00 50%);
+  background-size: 50px 50px,50px 50px;
+  background-position: 10px 10px, 10px 10px;
+  color: white;
+}
+
+#grey {
+  background: #595959;
+  color: black;
+}
+
+#clear {
+  background: white;
+  color: black;
+}
+
+#reset {
+  background: black;
+  }
+#image {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 275px;
+}
+#buttons {
+  display: block;
+  border: 1px solid black;
+  margin: auto;
+}

@@ -2,23 +2,19 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-}
-
-#portfolio {
-  height: 1450px;
-}
-
-#about{
-  height: 650px;
-}
-
-#connect {
-  height: 450px;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
 }
 
 /***** GRID *****/
@@ -28,40 +24,49 @@ a {
   width: 100%;
 }
 
-.half-width {
-  float: left;
-  width: 50%;
+.half-width, .half-width-about {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 .third-width {
-  float: left;
-  width: 33.3%;
+  align-items: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 /***** Header *****/
 
 header {
+  align-items: center;
   background-image: url("../img/hero-image.png");
+  background-position: center center;
   background-size: cover;
-  height: 800px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 400px;
   text-align: center;
+  width: 100%;
 }
 
 header h1 {
-  color: #ffe2ad;
+  color: #ffdb99;
   font-family: 'Bowlby One SC';
-  font-size: 72px;
+  font-size: 48px;
   margin: auto;
-  padding-top: 300px;
-  padding-left: 50px;
 }
 
 header h2 {
   color: #095256;
-  font-size: 36px;
+  font-size: 24px;
   margin: auto;
   padding-left:30px;
-  width: 800px;
 }
 
 /***** Portfolio  *****/
@@ -71,41 +76,37 @@ header h2 {
 
 #portfolio h3 {
   color: #095256;
+  display: flex;
   font-family: 'Bowlby One SC';
-  text-align: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 #portfolio img {
- margin-left: 100px;
- padding-bottom: 50px;
+ max-width: 450px;
 }
 
 #portfolio h4, #portfolio p {
   color: #095256;
-  text-align: left;
+  text-align: justify;
+  margin: 5px 5px 10px 5px;
+  max-width: 450px;
+  padding: 0;
+
 }
 
-#portfolio .full-width {
-  padding: 50px 0;
+#portfolio .project-info, .project-info-1, .project-info-2, .project-info-3 {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-#portfolio .project-info-1 {
-  height:350px;
-  margin-top: -35px;
-  padding-right: 50px;
+#portfolio .project-info {
+  border-bottom: solid 2px;
+  margin: 20px;
 }
 
-#portfolio .project-info-2 {
-  height: 350px;
-  padding-top: 25px;
-  padding-right: 50px;
-}
-
-#portfolio .project-info-3 {
-  height: 350px;
-  padding-top: 55px;
-  padding-right: 50px;
-}
 
 /***** About  *****/
 #about {
@@ -124,15 +125,17 @@ header h2 {
 
 #about p {
   color: #ffffff;
-  margin-right: 75px;
-  text-align: left;
+  max-width: 450px;
+  text-align: justify;
 }
 
 /***** Connect  *****/
 #connect {
+  align-items: center;
   background-color: #184044;
   border: solid 1px;
   border-color: #184044;
+  justify-content: center;
   margin-top: 0;
   text-align: center;
 }
@@ -142,7 +145,7 @@ header h2 {
 }
 
 #connect p {
-  padding-bottom: 0px;
+margin-top: 25px;
 }
 
 #connect h3 {
@@ -150,6 +153,8 @@ header h2 {
 }
 
 #connect img {
+  clear: both;
+  float: left;
   margin: 10px;
 }
 /***** Footer  *****/
@@ -160,6 +165,79 @@ footer {
 
 footer p {
   color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 0.75em;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/****** Tablet Styles ******/
+@media (min-width: 768px) {
+
+  header {
+    min-height: 600px;
+  }
+
+  #portfolio img, #portfolio h4 {
+    text-align: center;
+    width: 95%;
+  }
+
+  #portfolio .project-info, .project-info-1, .project-info-2, .project-info-3 {
+    display: inline;
+    float: left;
+  }
+
+  #portfolio .project-info {
+    border-bottom: none;
+  }
+
+  #about {
+    display: inline;
+    float: left;
+    width: 100%;
+  }
+
+  #about img {
+    margin: 20px;
+  }
+
+  #connect {
+    display: inline;
+    float: left;
+    width: 100%;
+  }
+
+  #hire, #follow {
+    display: inline;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+
+  #hire {
+    float: left;
+  }
+
+  #follow {
+    float: right;
+  }
+}
+
+
+
+/****** Desktop Styles ******/
+@media (min-width: 1200px) {
+  header {
+    height: 800px;
+  }
+
+  header h1 {
+    font-size: 4.5em;
+  }
+
+  header h2 {
+    font-size: 2.25em;
+    width: 800px;
+  }
+
 }
